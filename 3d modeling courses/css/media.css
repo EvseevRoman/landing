@@ -1,0 +1,366 @@
+@media (max-width: 992px) {
+
+  .section-hero__title {
+    margin-bottom: 16px;
+    font-size: 50px;
+  }
+
+  .section-hero__descr {
+    line-height: 149%;
+    letter-spacing: -0.2px;
+  }
+
+  .section-hero__content {
+    padding-bottom: 125px;
+  }
+
+  .section-hero__decoration {
+    background-image: url(../img/hero__img_690.png);
+    background-position: center 102px;
+  }
+
+  .section-advantages__img {
+    background-size: contain;
+  }
+
+  .item-advantages__icon {
+    margin-bottom: 11px;
+  }
+
+  .section-advantages {
+    margin-bottom: 76px;
+  }
+
+  .card-teachers__picture-teachers {
+    margin-bottom: 31px;
+  }
+
+  .card-teachers__descr {
+    margin-bottom: 24px;
+  }
+
+  .section-teachers {
+    padding-bottom: 50px;
+    margin-bottom: 74px;
+  }
+
+  .section-courses__title {
+    margin-bottom: 24px;
+  }
+
+  .card-courses--correction {
+    padding-right: 0;
+  }
+
+  .content-wrapper {
+    margin-bottom: 29px;
+  }
+
+  .card-courses__time {
+    right: 10px;
+  }
+
+  .card-courses__btn {
+    padding: 20.5px 55.5px;
+  }
+
+  .section-courses__card-courses {
+    margin-bottom: 30px;
+  }
+
+  .section-courses {
+    margin-bottom: 48px;
+  }
+
+  .card-courses__img-1::before {
+    background-image: url(../img/courses_img-1_690px.jpg);
+  }
+
+  .card-courses__img-2::before {
+    background-image: url(../img/courses_img-2_690px.jpg);
+  }
+
+  .card-courses__img-3::before {
+    background-image: url(../img/courses_img-3_690px.jpg);
+  }
+
+  .card-courses__img-4::before {
+    background-image: url(../img/courses_img-4_690px.jpg);
+  }
+
+}
+
+
+@media (max-width: 767px) {
+  .header__container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .header__logo {
+    margin-bottom: 28px;
+  }
+
+  .section-hero {
+    background: radial-gradient(49% 49% at 67.78% 84.57%, #555681 0%, #2E2B44 100%);
+  }
+
+  .section-hero__content {
+    padding-top: 62px;
+  }
+
+  .section-hero__descr {
+    letter-spacing: 0.1px;
+  }
+
+  .section-advantages__img {
+    background-position: center 0px;
+    background-size: contain;
+  }
+
+  .section-advantages {
+    margin-bottom: 54px;
+  }
+
+  .card-teachers__descr {
+    letter-spacing: -0.1px;
+  }
+
+  .card-courses__img-1::before {
+    background-image: url(../img/courses_img-1_510px.jpg);
+  }
+
+  .card-courses__img-2::before {
+    background-image: url(../img/courses_img-2_510px.jpg);
+  }
+
+  .card-courses__img-3::before {
+    background-image: url(../img/courses_img-3_510px.jpg);
+  }
+
+  .card-courses__img-4::before {
+    background-image: url(../img/courses_img-4_510px.jpg);
+  }
+
+  .content-wrapper {
+    margin-bottom: 34px;
+  }
+
+  .card-courses__title {
+    line-height: 130%;
+  }
+
+  .card-courses__btn {
+    padding: 20.5px 48.5px;
+  }
+
+  .section-courses {
+    margin-bottom: 48px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .header__container {
+    flex-direction: row;
+  }
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+  }
+
+  .burger__line {
+    position: absolute;
+    bottom: 48%;
+    right: 0;
+    width: 50%;
+    height: 3px;
+    background-color: var(--white-color);
+  }
+
+  .burger__line:first-child {
+    top: 30%;
+    right: 0;
+  }
+
+  .burger__line:last-child {
+    bottom: 32%;
+    right: 0;
+  }
+
+  .header__nav {
+    display: block;
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    max-width: 420px;
+    height: 100vh;
+    min-width: 250px;
+    z-index: 20;
+    background-color: var(--white-color);
+    box-shadow: 0 0 5px #888;
+    padding: 50px;
+    overflow-y: auto;
+    visibility: hidden;
+    transform: translateX(-120%);
+    transition: visibility 0.3s ease, transform 0.3s ease;
+  }
+
+  .header__list {
+    flex-direction: column;
+    color: var(--black-color);
+    font-size: 20px;;
+  }
+
+  .header__nav--active {
+    visibility: visible;
+    transform: none;
+  }
+
+  .stop-scroll {
+    overflow: hidden;
+  }
+
+  .burger--active .burger__line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger--active .burger__line:first-child {
+    transform: rotate(45deg);
+    top: 50%;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+
+  .burger--active .burger__line:last-child {
+    bottom: auto;
+    top: 50%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+
+  .header__container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .section-hero {
+    margin-bottom: 49px;
+  }
+
+  .section-hero__content {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+
+  .section-hero__title {
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+
+
+  .section-hero__descr {
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.2px;
+    margin-bottom: 44px;
+  }
+
+  .section-hero__btn {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 20px 54px;
+  }
+
+  .section-advantages {
+    margin-bottom: 20px;
+  }
+
+  .section-advantages__title {
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 2px;
+  }
+
+  .section-advantages__item-advantages {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 19px;
+  }
+
+  .item-advantages__icon {
+    margin-right: 30px;
+  }
+
+  .item-advantages__text {
+    max-width: 100%;
+  }
+
+  .section-teachers {
+    padding-top: 47px;
+    padding-bottom: 24px;
+    margin-bottom: 46px;
+  }
+
+  .section-teachers__title {
+    margin-bottom: 27px;
+    font-size: 20px;
+  }
+
+  .card-teachers__descr {
+    letter-spacing: 0;
+  }
+
+  .content-wrapper {
+    margin-bottom: 81px;
+  }
+
+  .section-courses {
+    margin-bottom: 20px;
+  }
+
+  .section-courses__title {
+    font-size: 20px;
+    margin-bottom: 27px;
+  }
+
+  .card-courses__title {
+    margin-bottom: 9px;
+  }
+
+  .card-courses__btn {
+    padding: 20.5px 55.5px;
+  }
+
+  .card-courses__img-1::before {
+    background-image: url(../img/courses_img-1_320px.png);
+  }
+
+  .card-courses__img-2::before {
+    background-image: url(../img/courses_img-2_320px.png);
+  }
+
+  .card-courses__img-3::before {
+    background-image: url(../img/courses_img-3_320px.png);
+  }
+
+  .card-courses__img-4::before {
+    background-image: url(../img/courses_img-4_320px.png);
+  }
+
+  .section-courses__card-courses {
+    height: 653px;
+    margin-bottom: 30px;
+  }
+}
